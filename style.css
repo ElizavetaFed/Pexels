@@ -1,13 +1,19 @@
 html {
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden; /* вместо overflow: hidden */
+}
+
+body {
+  margin: 0; /* ЭТО ГЛАВНОЕ! Убираем отступы body */
+  padding: 0;
 }
 
 .page {
   background: url(images/background.png);
   background-repeat: no-repeat;
-  width: 1400px;
-  height: 760px;
+  background-size: cover; /* чтобы фон растянулся на всю ширину */
+  width: 100%; /* вместо 1400px */
+  min-height: 760px; /* вместо height: 760px */
 }
 
 .header {
